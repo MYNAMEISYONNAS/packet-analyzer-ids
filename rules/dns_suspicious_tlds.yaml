@@ -1,0 +1,12 @@
+title: Suspicious DNS TLD Detected
+type: dns
+severity: MEDIUM
+description: Detects DNS queries containing suspicious top-level domains.
+
+conditions:
+  contains:
+    - ".ru"
+    - ".xyz"
+    - ".tk"
+    - ".top"
+
